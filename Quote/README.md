@@ -8,9 +8,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Minimum Viable Product (MVP)
 
-
-
 I am hoping to implement more interactivity in the project in the near future
+## Technologies used
+
+1. TypeScript 
+2. HTML
+3. CSS
+4. Bootstrap
+5. JavaScript
+6. Angular CLI
+7. GIT
+
 
 ## Development server
 
