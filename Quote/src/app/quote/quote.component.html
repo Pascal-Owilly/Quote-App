@@ -1,0 +1,40 @@
+<h1 class="bg-warning text-white text-center">Quotes from noticeable people</h1>
+<hr>
+<div class="container-fluid m-2">
+  <div class="row">
+    <div class="col-md-4">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+
+
+
+  <div class="col-md-8" >
+
+      <div class="card bg-warning">
+        <div class="card-header bg-secondary text-white" >Hope of the world</div>
+        <div class="card-body">
+          <div *ngFor='let quote of quotes;let i = index' >
+           <p> {{quote.coolQuote}} </p><br>
+            <button class="btn btn-sm btn-primary" (click)='toggleDescription(i)'>Show quote</button>
+            <app-quote-description *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event, i)'></app-quote-description>
+          </div>
+          <div class="card-footer" style="background-color: bisque;">
+
+          </div>
+        </div>
+
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
