@@ -39,6 +39,7 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.5.2"
   },
+  
   "browserslist": [
     "and_chr 97",
     "and_ff 95",
